@@ -8,7 +8,7 @@ import { getAstrologicalInsight, getTransitInsights } from './services/geminiSer
 import ErrorBoundary from './components/ErrorBoundary';
 import CosmicBackground from './components/layout/CosmicBackground';
 import Footer from './components/layout/Footer';
-import WhatsAppButton from './components/WhatsAppButton';
+
 
 
 const STORAGE_KEY = 'astromic_user_profile_v2';
@@ -222,8 +222,7 @@ const App: React.FC = () => {
 
         {step === 'PROFILE_DISPLAY' && !isChatOpen && (
           <>
-            {/* WhatsApp Button (Bottom Left) */}
-            <WhatsAppButton />
+
 
             {/* Chat FAB with Pulse & Context Bubbles */}
             <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2 pointer-events-none sm:pointer-events-auto">
